@@ -1,4 +1,5 @@
 import 'package:delivery_app/components/my_drawer_tile.dart';
+import 'package:delivery_app/pages/setting_page.dart';
 import 'package:flutter/material.dart';
 
 class MyDrawer extends StatelessWidget {
@@ -29,12 +30,33 @@ class MyDrawer extends StatelessWidget {
           //home list tyle
           MyDrawerTile(
             icon: Icons.home,
-            onTap: () {},
+            onTap: () => Navigator.pop(context),
             text: "Home",
-          )
+          ),
           //setting list tyle
-
-          //logo list tile
+          MyDrawerTile(
+            icon: Icons.settings,
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const SettingPage(),
+                ),
+              );
+            },
+            text: "Settings",
+          ),
+          const Spacer(),
+          //logout list tile
+          MyDrawerTile(
+            icon: Icons.logout_outlined,
+            onTap: () {},
+            text: "Log Out",
+          ),
+          const SizedBox(
+            height: 25,
+          )
         ],
       ),
     );
