@@ -28,6 +28,8 @@ class MyTextField extends StatelessWidget {
               color: Theme.of(context).colorScheme.primary,
             ),
           ),
+          hintText: hinText,
+          hintStyle: TextStyle(color: Theme.of(context).colorScheme.primary),
         ),
       ),
     );
