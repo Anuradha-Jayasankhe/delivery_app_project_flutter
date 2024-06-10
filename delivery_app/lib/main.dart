@@ -1,11 +1,23 @@
 import 'package:delivery_app/auth/login_or_register.dart';
+import 'package:delivery_app/models/resturent.dart';
 import 'package:delivery_app/themes/theme_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  runApp(ChangeNotifierProvider(
-      create: (contex) => ThemeProvider(), child: const MyApp()));
+  runApp(MultiProvider(
+    providers: [
+      //teame
+      ChangeNotifierProvider(
+        create: (context) => ThemeProvider(),
+      ),
+      //resturent
+      ChangeNotifierProvider(
+        create: (context) => Resturant(),
+      )
+    ],
+    child: const MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
