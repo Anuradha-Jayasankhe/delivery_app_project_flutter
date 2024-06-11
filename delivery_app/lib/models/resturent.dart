@@ -1,3 +1,4 @@
+import 'package:delivery_app/models/cart_item.dart';
 import 'package:delivery_app/models/food.dart';
 import 'package:flutter/material.dart';
 
@@ -7,7 +8,7 @@ class Resturant extends ChangeNotifier {
     Food(
       name: " King Burger",
       description: "A juicy beef patty with melted cheddar",
-      imagePath: "assets/images/burger1.jpg",
+      imagePath: "./assets/images/burger1.jpg",
       price: 100,
       category: FoodCategory.burgers,
       availableAddons: [
@@ -19,7 +20,7 @@ class Resturant extends ChangeNotifier {
     Food(
       name: " BBq bacon Burger",
       description: "Smoky BBQ sourse ,crispy bacon,and onion rings",
-      imagePath: "assets/images/burger2.jpg",
+      imagePath: "./assets/images/burger2.jpg",
       price: 120,
       category: FoodCategory.burgers,
       availableAddons: [
@@ -31,7 +32,7 @@ class Resturant extends ChangeNotifier {
     Food(
       name: " Veggie Burger",
       description: "Healty veggie patt tapped with fresh avokado",
-      imagePath: "assets/images/burger5.jpg",
+      imagePath: "./assets/images/burger5.jpg",
       price: 100,
       category: FoodCategory.burgers,
       availableAddons: [
@@ -44,7 +45,7 @@ class Resturant extends ChangeNotifier {
       name: " Aloha Burger",
       description:
           "A char-grilled chiken brest tapped with a sourse of pinnallpe sourse",
-      imagePath: "assets/images/burger3.jpg",
+      imagePath: "./assets/images/burger3.jpg",
       price: 120,
       category: FoodCategory.burgers,
       availableAddons: [
@@ -56,7 +57,7 @@ class Resturant extends ChangeNotifier {
     Food(
       name: " Blue Moon Burger",
       description: "This burger is a blue Cheese lover's Dream",
-      imagePath: "assets/images/burger4.jpg",
+      imagePath: "./assets/images/burger4.jpg",
       price: 100,
       category: FoodCategory.burgers,
       availableAddons: [
@@ -70,7 +71,7 @@ class Resturant extends ChangeNotifier {
     Food(
       name: " Caeser Salad",
       description: "Crisp Roman lettuces,armrnsan cheese,croutons",
-      imagePath: "assets/images/salad1.jpg",
+      imagePath: "./assets/images/salad1.jpg",
       price: 300,
       category: FoodCategory.salads,
       availableAddons: [
@@ -82,7 +83,7 @@ class Resturant extends ChangeNotifier {
     Food(
       name: " Greek Salad",
       description: "Tomattos,cucumber,red onion,olives,feta cheese",
-      imagePath: "assets/images/salad2.jpg",
+      imagePath: "./assets/images/salad2.jpg",
       price: 320,
       category: FoodCategory.salads,
       availableAddons: [
@@ -94,7 +95,7 @@ class Resturant extends ChangeNotifier {
     Food(
       name: " Quinova Salad",
       description: "Quinova mixed with cucumber,ttomato,bell pepers",
-      imagePath: "assets/images/salad3.jpg",
+      imagePath: "./assets/images/salad3.jpg",
       price: 340,
       category: FoodCategory.salads,
       availableAddons: [
@@ -107,7 +108,7 @@ class Resturant extends ChangeNotifier {
       name: " Asian Sesame Salad",
       description:
           "Delight in the flavorse of the East with this sesame-nfuce salad",
-      imagePath: "assets/images/salad4.jpg",
+      imagePath: "./assets/images/salad4.jpg",
       price: 300,
       category: FoodCategory.salads,
       availableAddons: [
@@ -120,7 +121,7 @@ class Resturant extends ChangeNotifier {
       name: " South west Chcken Salad",
       description:
           "This colorful salad combined with the zesty flavor of the southhwest",
-      imagePath: "assets/images/salad5.jpg",
+      imagePath: "./assets/images/salad5.jpg",
       price: 350,
       category: FoodCategory.salads,
       availableAddons: [
@@ -134,7 +135,7 @@ class Resturant extends ChangeNotifier {
     Food(
       name: " Sweet potato Fries",
       description: "Crispy Sweet potato fries with a touch of salt",
-      imagePath: "assets/images/side2.jpg",
+      imagePath: "./assets/images/side2.jpg",
       price: 250,
       category: FoodCategory.sides,
       availableAddons: [
@@ -146,7 +147,7 @@ class Resturant extends ChangeNotifier {
     Food(
       name: " Onion Rings",
       description: "Golden and crispy onion rings ,perfect for dipping",
-      imagePath: "assets/images/side3.jpg",
+      imagePath: "./assets/images/side3.jpg",
       price: 200,
       category: FoodCategory.sides,
       availableAddons: [
@@ -159,7 +160,7 @@ class Resturant extends ChangeNotifier {
       name: " Garlic bread",
       description:
           "Warm and tosty garlic bread,tapped with melted butter and parsley.",
-      imagePath: "assets/images/side1.jpg",
+      imagePath: "./assets/images/side1.jpg",
       price: 250,
       category: FoodCategory.sides,
       availableAddons: [
@@ -171,7 +172,7 @@ class Resturant extends ChangeNotifier {
     Food(
       name: " Small fried bacon",
       description: "Roust chiken with pack of rice basmathi",
-      imagePath: "lib/images/sides/side4.jpg",
+      imagePath: "./assets/images/side4.jpg",
       price: 400,
       category: FoodCategory.sides,
       availableAddons: [
@@ -183,7 +184,7 @@ class Resturant extends ChangeNotifier {
     Food(
       name: " Sweet potato Fries",
       description: "Crispy Sweet potato fries with a touch of salt",
-      imagePath: "assets/images/side1.jpg",
+      imagePath: "./assets/images/side1.jpg",
       price: 250,
       category: FoodCategory.sides,
       availableAddons: [
@@ -199,7 +200,7 @@ class Resturant extends ChangeNotifier {
       name: " Cheese cake",
       description:
           "Creemy cheesecake on a graham cracker crust,with berry compote",
-      imagePath: "assets/images/dessert1.jpg",
+      imagePath: "./assets/images/dessert1.jpg",
       price: 400,
       category: FoodCategory.desserts,
       availableAddons: [
@@ -212,7 +213,7 @@ class Resturant extends ChangeNotifier {
     Food(
       name: " Choclet Bowney",
       description: "Rice and fudgy chocolate browney,with chunk of chockelet",
-      imagePath: "assets/images/dessert3.jpg",
+      imagePath: "./assets/images/dessert3.jpg",
       price: 450,
       category: FoodCategory.desserts,
       availableAddons: [
@@ -225,7 +226,7 @@ class Resturant extends ChangeNotifier {
       name: "Apple pie ",
       description:
           "Classic apple pie with flack crust and cinnemon-spiced appe filling",
-      imagePath: "assets/images/dessert2.jpg",
+      imagePath: "./assets/images/dessert2.jpg",
       price: 350,
       category: FoodCategory.desserts,
       availableAddons: [
@@ -238,7 +239,7 @@ class Resturant extends ChangeNotifier {
       name: "red velvet lava cake ",
       description:
           "A delecteble red valvet cake with a warm,geoey choclae lava center",
-      imagePath: "assets/images/dessert4.jpg",
+      imagePath: "./assets/images/dessert4.jpg",
       price: 400,
       category: FoodCategory.desserts,
       availableAddons: [
@@ -251,7 +252,7 @@ class Resturant extends ChangeNotifier {
       name: "choclate cake ",
       description:
           "Classic choclate with flack crust and cinnemon-spiced appe filling",
-      imagePath: "lib/images/desserts/dessert5.jpg",
+      imagePath: "./assets/images/dessert5.jpg",
       price: 350,
       category: FoodCategory.desserts,
       availableAddons: [
@@ -267,7 +268,7 @@ class Resturant extends ChangeNotifier {
       name: "Lemonade",
       description:
           "refreshing lemonade made with real lemons and a touch of sweetness",
-      imagePath: "assets/images/drinks3.jpg",
+      imagePath: "./assets/images/drinks3.jpg",
       price: 350,
       category: FoodCategory.drinks,
       availableAddons: [
@@ -280,7 +281,7 @@ class Resturant extends ChangeNotifier {
     Food(
       name: "Ice Tea",
       description: "chiled ice tea with the hint f lemon,served over ice",
-      imagePath: "assets/images/drinks1.jpg",
+      imagePath: "./assets/images/drinks1.jpg",
       price: 400,
       category: FoodCategory.drinks,
       availableAddons: [
@@ -293,7 +294,7 @@ class Resturant extends ChangeNotifier {
     Food(
       name: "Smoothie",
       description: "A blend of fresh fuites and Youget",
-      imagePath: "assets/images/drinks4.jpg",
+      imagePath: "./assets/images/drinks4.jpg",
       price: 300,
       category: FoodCategory.drinks,
       availableAddons: [
@@ -306,7 +307,7 @@ class Resturant extends ChangeNotifier {
     Food(
       name: "Mojito",
       description: "Aclassic cuban coctail with muddled lime and mnt",
-      imagePath: "assets/images/drinks5.jpg",
+      imagePath: "./assets/images/drinks5.jpg",
       price: 350,
       category: FoodCategory.drinks,
       availableAddons: [
@@ -319,7 +320,7 @@ class Resturant extends ChangeNotifier {
     Food(
       name: "Caramal mojto",
       description: "A laayered coffe drink with Streamed milk ",
-      imagePath: "assets/images/drinks2.jpg",
+      imagePath: "./assets/images/drinks2.jpg",
       price: 450,
       category: FoodCategory.drinks,
       availableAddons: [
@@ -334,9 +335,12 @@ class Resturant extends ChangeNotifier {
   List<Food> get menu => _menu;
 
   //OPERATIONS
-
+  final List<CartItem> _cart = [];
   //Add to the cart
-
+  void addToCart(Food food, List<Addon> selectedAddons) {
+    //see if there is a cart item already with the same food and selected addons
+    CartItem? cartItem = _cart.firstwhereornull((element) => false);
+  }
   //remove from cart
 
   //get total frice of cart
