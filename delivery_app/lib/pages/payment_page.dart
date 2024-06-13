@@ -44,11 +44,14 @@ class _PaymentPageState extends State<PaymentPage> {
 
             //yes button
             TextButton(
-                onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const DeliveryProgressPage(),
-                    )),
+                onPressed: () {
+                  Navigator.pop(context);
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const DeliveryProgressPage(),
+                      ));
+                },
                 child: const Text("Yes")),
           ],
         ),
