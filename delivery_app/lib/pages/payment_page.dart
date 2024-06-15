@@ -68,43 +68,43 @@ class _PaymentPageState extends State<PaymentPage> {
         foregroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text("Checkout"),
       ),
-      body: Column(
-        children: [
-          //credit card
-          CreditCardWidget(
-              cardNumber: cardNumber,
-              expiryDate: expiryDate,
-              cardHolderName: cardHolderName,
-              cvvCode: cvvCode,
-              showBackView: isCvvCode,
-              onCreditCardWidgetChange: (p0) {}),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              //credit card
+              CreditCardWidget(
+                cardNumber: cardNumber,
+                expiryDate: expiryDate,
+                cardHolderName: cardHolderName,
+                cvvCode: cvvCode,
+                showBackView: isCvvCode,
+                onCreditCardWidgetChange: (p0) {},
+              ),
 
-          //credit card form
-          CreditCardForm(
-            cardNumber: cardNumber,
-            expiryDate: expiryDate,
-            cardHolderName: cardHolderName,
-            cvvCode: cvvCode,
-            onCreditCardModelChange: (data) {
-              setState(() {
-                cardNumber = data.cardNumber;
-                expiryDate = data.expiryDate;
-                cardHolderName = data.cardHolderName;
-                cvvCode = data.cvvCode;
-              });
-            },
-            formKey: formKey,
+              //credit card form
+              CreditCardForm(
+                cardNumber: cardNumber,
+                expiryDate: expiryDate,
+                cardHolderName: cardHolderName,
+                cvvCode: cvvCode,
+                onCreditCardModelChange: (data) {
+                  setState(() {
+                    cardNumber = data.cardNumber;
+                    expiryDate = data.expiryDate;
+                    cardHolderName = data.cardHolderName;
+                    cvvCode = data.cvvCode;
+                  });
+                },
+                formKey: formKey,
+              ),
+              const SizedBox(height: 20), // Add some spacing
+              MyButton(onTap: userTappedPay, text: "Pay Now"),
+              const SizedBox(height: 25),
+            ],
           ),
-          const Spacer(),
-
-          //pay button
-
-          MyButton(onTap: userTappedPay, text: "Pay Now"),
-
-          const SizedBox(
-            height: 25,
-          )
-        ],
+        ),
       ),
     );
   }
